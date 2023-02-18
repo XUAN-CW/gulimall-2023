@@ -31,9 +31,9 @@ id: 1676719245007892100
  end
 ```
 
-
-
 ## 安装docker
+
+不废话，参考 [CentOS Docker 安装](https://www.runoob.com/docker/centos-docker-install.html) 
 
 
 
