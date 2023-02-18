@@ -42,12 +42,16 @@ docker pull mysql:5.7.30
 ```
 
 ```sh
-sudo docker run -p 3306:3306 --restart=always --name mysql \
- --privileged=true -v /mydata/mysql/log:/var/log/mysql \
--v /mydata/mysql/data:/var/lib/mysql \
--v /mydata/mysql/conf:/etc/mysql \
--e MYSQL_ROOT_PASSWORD=root \
--d mysql:5.7.30
+sudo docker run -d \
+  -p 3306:3306 \
+  --restart=always \
+  --privileged=true \
+  -v /mydata/mysql/log:/var/log/mysql \
+  -v /mydata/mysql/data:/var/lib/mysql \
+  -v /mydata/mysql/conf:/etc/mysql \
+  -e MYSQL_ROOT_PASSWORD=root \
+  --name mysql \
+  mysql:5.7.30
 ```
 
 ## 安装 redis
