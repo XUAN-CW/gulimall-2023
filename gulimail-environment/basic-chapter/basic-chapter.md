@@ -6,7 +6,29 @@ id: 1676719245007892100
 ---
 # 摘要
 
-# 步骤
+# 本机环境
+
+# jdk1.8
+
+jdk 1.8 差不多得了
+
+```sh
+java version "1.8.0_281"
+Java(TM) SE Runtime Environment (build 1.8.0_281-b09)
+Java HotSpot(TM) 64-Bit Server VM (build 25.281-b09, mixed mode)
+```
+
+# maven
+
+版本 3.6+ 应该都可以
+
+```sh
+Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
+```
+
+
+
+# 虚拟机环境
 
 ## 安装虚拟机
 
