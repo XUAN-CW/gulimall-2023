@@ -35,6 +35,38 @@ id: 1676719245007892100
 
 不废话，参考 [CentOS Docker 安装](https://www.runoob.com/docker/centos-docker-install.html) 
 
+## 安装 mysql
+
+```sh
+docker pull mysql:5.7
+```
+
+```sh
+sudo docker run -p 3306:3306 --restart=always --name mysql \
+ --privileged=true -v /mydata/mysql/log:/var/log/mysql \
+-v /mydata/mysql/data:/var/lib/mysql \
+-v /mydata/mysql/conf:/etc/mysql \
+-e MYSQL_ROOT_PASSWORD=root \
+-d mysql:5.7
+```
+
+## 安装 redis
+
+```sh
+docker pull redis:5.0.8
+```
+
+```sh
+mkdir -p /mydata/redis/conf
+touch /mydata/redis/conf/redis.conf
+echo "appendonly yes"  >> /mydata/redis/conf/redis.conf
+
+docker run -p 6379:6379 --name redis --restart=always \
+ -v /mydata/redis/data:/data \
+ -v /mydata/redis/conf/redis.conf:/etc/redis/redis.conf \
+ -d redis:5.0.8 redis-server /etc/redis/redis.conf
+```
+
 
 
 
