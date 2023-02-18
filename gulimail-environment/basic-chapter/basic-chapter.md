@@ -38,7 +38,7 @@ id: 1676719245007892100
 ## 安装 mysql
 
 ```sh
-docker pull mysql:5.7
+docker pull mysql:5.7.30
 ```
 
 ```sh
@@ -47,7 +47,7 @@ sudo docker run -p 3306:3306 --restart=always --name mysql \
 -v /mydata/mysql/data:/var/lib/mysql \
 -v /mydata/mysql/conf:/etc/mysql \
 -e MYSQL_ROOT_PASSWORD=root \
--d mysql:5.7
+-d mysql:5.7.30
 ```
 
 ## 安装 redis
