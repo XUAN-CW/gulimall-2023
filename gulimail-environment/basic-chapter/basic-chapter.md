@@ -65,10 +65,13 @@ mkdir -p /mydata/redis/conf
 touch /mydata/redis/conf/redis.conf
 echo "appendonly yes"  >> /mydata/redis/conf/redis.conf
 
-docker run -p 6379:6379 --name redis --restart=always \
- -v /mydata/redis/data:/data \
- -v /mydata/redis/conf/redis.conf:/etc/redis/redis.conf \
- -d redis:5.0.8 redis-server /etc/redis/redis.conf
+docker run -d \
+  -p 6379:6379 \
+  --name redis \
+  --restart=always \
+  -v /mydata/redis/data:/data \
+  -v /mydata/redis/conf/redis.conf:/etc/redis/redis.conf \
+  redis:5.0.8 redis-server /etc/redis/redis.conf
 ```
 
 
