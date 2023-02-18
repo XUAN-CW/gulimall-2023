@@ -1,6 +1,9 @@
 **/pending
 **/private
 
+.vagrant/
+
+
 ### IntelliJ IDEA ###
 .idea
 *.iws
