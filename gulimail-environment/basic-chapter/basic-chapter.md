@@ -54,6 +54,8 @@ sudo docker run -d \
   mysql:5.7.30
 ```
 
+配置文件没有也无所谓， mysql:5.7.30 起来就行了
+
 ## 安装 redis
 
 ```sh
