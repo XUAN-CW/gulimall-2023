@@ -76,6 +76,34 @@ docker run -d \
   redis:5.0.8 redis-server /etc/redis/redis.conf
 ```
 
+## 安装nacos
+
+这里虚拟机内存一定要大！不然启动不起来！
+
+```sh
+docker run -d \
+  --restart=always \
+  -p 8848:8848 \
+  --name nacos \
+  -e MODE=standalone \
+  nacos/nacos-server:1.1.3
+```
+
+如果实在内存不够，那就使用下面这个：
+
+```sh
+docker run -d \
+  --restart=always \
+  -p 8848:8848 \
+  --name nacos \
+  -e MODE=standalone \
+  -e JVM_XMS=256m \
+  -e JVM_XMX=256m \
+  nacos/nacos-server:1.1.3
+```
+
+
+
 
 
 
