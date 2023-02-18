@@ -5,3 +5,7 @@ date: 2023-02-18 19:07:19
 id: 1676718439521018100
 ---
 # 摘要
+
+# 参考资料
+
+[gulimall-learning](https://github.com/NiceSeason/gulimall-learning.git) 项目
