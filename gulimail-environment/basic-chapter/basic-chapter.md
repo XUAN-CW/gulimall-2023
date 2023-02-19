@@ -8,7 +8,7 @@ id: 1676719245007892100
 
 # 本机环境
 
-# jdk1.8
+## jdk1.8
 
 jdk 1.8 差不多得了
 
@@ -18,7 +18,7 @@ Java(TM) SE Runtime Environment (build 1.8.0_281-b09)
 Java HotSpot(TM) 64-Bit Server VM (build 25.281-b09, mixed mode)
 ```
 
-# maven
+## maven
 
 版本 3.6+ 应该都可以
 
@@ -26,7 +26,9 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.281-b09, mixed mode)
 Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
 ```
 
+## node.js
 
+[全部版本下载页面](https://nodejs.org/zh-cn/download/releases/) | [Node.js 10.16.3](https://nodejs.org/download/release/v10.16.3/) |[node-v10.16.3-x64.msi](https://nodejs.org/download/release/v10.16.3/node-v10.16.3-x64.msi) 
 
 # 虚拟机环境
 
@@ -78,6 +80,27 @@ sudo docker run -d \
 
 配置文件没有也无所谓， mysql:5.7.30 起来就行了
 
+### 数据表
+
+创建数据库后逐个执行：
+
+```sql
+CREATE DATABASE IF NOT EXISTS `gulimall_oms` CHARACTER SET utf8 COLLATE utf8_general_ci;
+CREATE DATABASE IF NOT EXISTS `gulimall_pms` CHARACTER SET utf8 COLLATE utf8_general_ci;
+CREATE DATABASE IF NOT EXISTS `gulimall_sms` CHARACTER SET utf8 COLLATE utf8_general_ci;
+CREATE DATABASE IF NOT EXISTS `gulimall_ums` CHARACTER SET utf8 COLLATE utf8_general_ci;
+CREATE DATABASE IF NOT EXISTS `gulimall_wms` CHARACTER SET utf8 COLLATE utf8_general_ci;
+CREATE DATABASE IF NOT EXISTS `sys_menus` CHARACTER SET utf8 COLLATE utf8_general_ci;
+```
+
+1.  gulimall_oms：[gulimall_oms.sql](assets\data\gulimall_oms.sql) 
+
+2.  gulimall_oms：[gulimall_pms.sql](assets\data\gulimall_pms.sql) [pms_catelog.sql](assets\data\pms_catelog.sql) 
+3.  gulimall_sms：[gulimall_sms.sql](assets\data\gulimall_sms.sql) 
+4.  gulimall_ums：[gulimall_ums.sql](assets\data\gulimall_ums.sql) 
+5.  gulimall_wms：[gulimall_wms.sql](assets\data\gulimall_wms.sql) 
+6.  sys_menus：[sys_menus.sql](assets\data\sys_menus.sql) 
+
 ## 安装 redis
 
 ```sh
@@ -100,7 +123,7 @@ docker run -d \
 
 ## 安装nacos
 
-这里虚拟机内存一定要大！不然启动不起来！
+建议装在虚拟机上，在代码改一下 nacos 服务地址就行了。这里虚拟机内存一定要大！不然启动不起来！
 
 ```sh
 docker run -d \
@@ -124,30 +147,12 @@ docker run -d \
   nacos/nacos-server:1.1.3
 ```
 
+### 导入配置
 
+新建命名空间：
 
-
-
-# 执行数据库脚本
-
-创建数据库后逐个执行：
-
-```sql
-CREATE DATABASE IF NOT EXISTS `gulimall_oms` CHARACTER SET utf8 COLLATE utf8_general_ci;
-CREATE DATABASE IF NOT EXISTS `gulimall_pms` CHARACTER SET utf8 COLLATE utf8_general_ci;
-CREATE DATABASE IF NOT EXISTS `gulimall_sms` CHARACTER SET utf8 COLLATE utf8_general_ci;
-CREATE DATABASE IF NOT EXISTS `gulimall_ums` CHARACTER SET utf8 COLLATE utf8_general_ci;
-CREATE DATABASE IF NOT EXISTS `gulimall_wms` CHARACTER SET utf8 COLLATE utf8_general_ci;
-CREATE DATABASE IF NOT EXISTS `sys_menus` CHARACTER SET utf8 COLLATE utf8_general_ci;
-```
-
-1.  gulimall_oms：[gulimall_oms.sql](assets\data\gulimall_oms.sql) 
-
-2.  gulimall_oms：[gulimall_pms.sql](assets\data\gulimall_pms.sql) [pms_catelog.sql](assets\data\pms_catelog.sql) 
-3.  gulimall_sms：[gulimall_sms.sql](assets\data\gulimall_sms.sql) 
-4.  gulimall_ums：[gulimall_ums.sql](assets\data\gulimall_ums.sql) 
-5.  gulimall_wms：[gulimall_wms.sql](assets\data\gulimall_wms.sql) 
-6.  sys_menus：[sys_menus.sql](assets\data\sys_menus.sql) 
+-  [Nacos_coupon.html](assets\data\Nacos_coupon.html) 并导入 [coupon.zip](assets\data\coupon.zip) 
+-  [Nacos_gateway.html](assets\data\Nacos_gateway.html) 
 
 # 初始化项目
 
@@ -184,12 +189,6 @@ http://localhost:8080/renren-fast
 
  [renren-fast-vue.zip](assets\data\renren-fast-vue.zip) 
 
-### 环境搭建
-
-#### node.js
-
-[全部版本下载页面](https://nodejs.org/zh-cn/download/releases/) | [Node.js 10.16.3](https://nodejs.org/download/release/v10.16.3/) |[node-v10.16.3-x64.msi](https://nodejs.org/download/release/v10.16.3/node-v10.16.3-x64.msi) 
-
 #### 淘宝镜像源
 
 ```
@@ -213,41 +212,6 @@ npm run dev
  [renren-generator.zip](assets\data\renren-generator.zip) 
 
 启动后进入：http://localhost/  ，使用代码生成器生成代码
-
-# nacos
-
-## 安装
-
-### 本机
-
-[下载页面](https://github.com/alibaba/nacos/releases/tag/1.1.3) | [nacos-server-1.1.3.zip](https://github.com/alibaba/nacos/releases/download/1.1.3/nacos-server-1.1.3.zip) 
-
-### 虚拟机
-
-建议装在虚拟机上，改一下 nacos 服务地址就行了
-
-```
-docker pull nacos-server:1.4.1
-```
-
-```
-docker run --restart=always -e JVM_XMS=256m -e JVM_XMX=256m --env MODE=standalone --name nacos-server -d -p 8848:8848 nacos/nacos-server:1.4.1
-```
-
-## 配置
-
-新建命名空间：
-
--  [Nacos_coupon.html](assets\data\Nacos_coupon.html) 并导入 [coupon.zip](assets\data\coupon.zip) 
--  [Nacos_gateway.html](assets\data\Nacos_gateway.html) 
-
-
-
-
-
-
-
-
 
 
 
