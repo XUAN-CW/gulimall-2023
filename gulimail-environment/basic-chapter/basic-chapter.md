@@ -114,8 +114,6 @@ use gulimall_admin;
 
 在数据库 **gulimall_dmin** 中执行  [sys_menu.sql](assets\data\sys_menu.sql) 
 
-
-
 ## 安装 redis
 
 ```sh
