@@ -101,6 +101,15 @@ CREATE DATABASE IF NOT EXISTS `sys_menus` CHARACTER SET utf8 COLLATE utf8_genera
 5.  gulimall_wms：[gulimall_wms.sql](assets\data\gulimall_wms.sql) 
 6.  sys_menus：[sys_menus.sql](assets\data\sys_menus.sql) 
 
+### [renren](https://gitee.com/renrenio) 
+
+本项目管理后台基于人人开源，为了能够使用 [renren-fast.zip](assets\data\renren-fast.zip) 、 [renren-fast-vue.zip](assets\data\renren-fast-vue.zip) 、 [renren-generator.zip](assets\data\renren-generator.zip) 等项目，因此需要导入数据库：解压  [renren-fast.zip](assets\data\renren-fast.zip) ，解压目录下有 **db/mysql.sql** ，建表 `gulimall_admin` 并执行  **db/mysql.sql** 
+
+```sql
+CREATE DATABASE IF NOT EXISTS `gulimall_admin` CHARACTER SET utf8 COLLATE utf8_general_ci;
+use gulimall_admin;
+```
+
 ## 安装 redis
 
 ```sh
@@ -153,67 +162,4 @@ docker run -d \
 
 -  [Nacos_coupon.html](assets\data\Nacos_coupon.html) 并导入 [coupon.zip](assets\data\coupon.zip) 
 -  [Nacos_gateway.html](assets\data\Nacos_gateway.html) 
-
-# 初始化项目
-
-# renren
-
-## [renren-fast](https://gitee.com/renrenio/renren-fast) 
-
-### 资源
-
- [renren-fast.zip](assets\data\renren-fast.zip) 
-
-### 环境搭建
-
-renren-fast 数据库，解压  [renren-fast.zip](assets\data\renren-fast.zip) ，解压目录下有 **db/mysql.sql** ，建表 `gulimall_admin` 并执行  **db/mysql.sql** 
-
-```sql
-CREATE DATABASE IF NOT EXISTS `gulimall_admin` CHARACTER SET utf8 COLLATE utf8_general_ci;
-use gulimall_admin;
-```
-
-### 启动与访问
-
-http://localhost:8080/renren-fast 
-
-有下面信息表示成功：
-
-```
-{"msg":"invalid token","code":401}
-```
-
-## [renren-fast-vue](https://gitee.com/renrenio/renren-fast-vue) 
-
-### 资源
-
- [renren-fast-vue.zip](assets\data\renren-fast-vue.zip) 
-
-#### 淘宝镜像源
-
-```
-npm config set registry http://registry.npm.taobao.org/
-```
-
-### 运行
-
-所有问题的根源都在 **node_modules**，npm install之前，应该将这个文件夹删除，然后再进行安装和运行。
-
-```
-npm install
-```
-
-```
-npm run dev
-```
-
-## [renren-generator](https://gitee.com/renrenio/renren-generator) 
-
- [renren-generator.zip](assets\data\renren-generator.zip) 
-
-启动后进入：http://localhost/  ，使用代码生成器生成代码
-
-
-
-
 
