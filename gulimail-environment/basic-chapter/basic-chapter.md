@@ -20,7 +20,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.281-b09, mixed mode)
 
 ## maven
 
-版本 3.6+ 应该都可以
+版本 3.6+ 应该都可以，我选择 [apache-maven-3.6.3-bin.zip](https://archive.apache.org/dist/maven/maven-3/3.6.3/binaries/)
 
 ```sh
 Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
