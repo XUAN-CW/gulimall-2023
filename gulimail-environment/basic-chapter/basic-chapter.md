@@ -80,7 +80,7 @@ sudo docker run -d \
 
 配置文件没有也无所谓， mysql:5.7.30 起来就行了
 
-### 数据表
+### 谷粒商城数据库
 
 创建数据库后逐个执行：
 
@@ -101,7 +101,7 @@ CREATE DATABASE IF NOT EXISTS `sys_menus` CHARACTER SET utf8 COLLATE utf8_genera
 5.  gulimall_wms：[gulimall_wms.sql](assets\data\gulimall_wms.sql) 
 6.  sys_menus：[sys_menus.sql](assets\data\sys_menus.sql) 
 
-### [renren](https://gitee.com/renrenio) 
+### [renren](https://gitee.com/renrenio) 数据库
 
 本项目管理后台基于人人开源，为了能够使用 [renren-fast.zip](assets\data\renren-fast.zip) 、 [renren-fast-vue.zip](assets\data\renren-fast-vue.zip) 、 [renren-generator.zip](assets\data\renren-generator.zip) 等项目，因此需要导入数据库：解压  [renren-fast.zip](assets\data\renren-fast.zip) ，解压目录下有 **db/mysql.sql** ，建表 `gulimall_admin` 并执行  **db/mysql.sql** 
 
