@@ -99,7 +99,7 @@ CREATE DATABASE IF NOT EXISTS `sys_menus` CHARACTER SET utf8 COLLATE utf8_genera
 3.  gulimall_sms：[gulimall_sms.sql](assets\data\gulimall_sms.sql) 
 4.  gulimall_ums：[gulimall_ums.sql](assets\data\gulimall_ums.sql) 
 5.  gulimall_wms：[gulimall_wms.sql](assets\data\gulimall_wms.sql) 
-6.  sys_menus：[sys_menus.sql](assets\data\sys_menus.sql) 
+6.  ~~sys_menus：[sys_menus.sql](assets\data\sys_menus.sql)~~ 
 
 ### [renren](https://gitee.com/renrenio) 数据库
 
