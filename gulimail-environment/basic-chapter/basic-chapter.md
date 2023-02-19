@@ -110,6 +110,12 @@ CREATE DATABASE IF NOT EXISTS `gulimall_admin` CHARACTER SET utf8 COLLATE utf8_g
 use gulimall_admin;
 ```
 
+### 前端左侧目录
+
+在数据库 **gulimall_dmin** 中执行  [sys_menu.sql](assets\data\sys_menu.sql) 
+
+
+
 ## 安装 redis
 
 ```sh
@@ -162,10 +168,6 @@ docker run -d \
 
 -  [Nacos_coupon.html](assets\data\Nacos_coupon.html) 并导入 [coupon.zip](assets\data\coupon.zip) 
 -  [Nacos_gateway.html](assets\data\Nacos_gateway.html) 
-
-# 前端左侧目录
-
-在数据库 **gulimall_dmin** 中执行  [sys_menu.sql](assets\data\sys_menu.sql) 
 
 # 阿里云OSS
 
