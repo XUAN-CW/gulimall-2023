@@ -176,25 +176,23 @@ docker run -d \
 1.  AccessKey ：access-key 、secret-key
 2.  bucket ：endpoint、bucket
 
-# nacos
+## 跨域
+
+ [OSS管理控制台-设置跨域.html](assets\data\OSS管理控制台-设置跨域.html) 
+
+## 公共读
+
+在 [读写权限](assets\data\OSS管理控制台-读写权限.html) 中设置为**公共读** 
+
+## nacos
 
  [Nacos_third-party](assets\data\Nacos_third-party.html) 导入  [Nacos_oss.yml.html](assets\data\Nacos_oss.yml.html) ，里面的值要换成自己的
 
  [只有我能使用的私有阿里云配置](assets\private\nacos_config_export_20210729225748.zip) 
 
-# 前端访问重置
+## 前端访问重置
 
 完成后需要搜索 `gulimall-hello` ，将路径替换成你的路径
-
-# 跨域
-
- [OSS管理控制台-设置跨域.html](assets\data\OSS管理控制台-设置跨域.html) 
-
-# 公共读
-
-在 [读写权限](assets\data\OSS管理控制台-读写权限.html) 中设置为**公共读** 
-
-
 
 
 
