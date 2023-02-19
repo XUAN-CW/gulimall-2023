@@ -86,11 +86,17 @@ sudo docker run -d \
 
 ```sql
 CREATE DATABASE IF NOT EXISTS `gulimall_oms` CHARACTER SET utf8 COLLATE utf8_general_ci;
+use `gulimall_oms`;
 CREATE DATABASE IF NOT EXISTS `gulimall_pms` CHARACTER SET utf8 COLLATE utf8_general_ci;
+use `gulimall_pms`;
 CREATE DATABASE IF NOT EXISTS `gulimall_sms` CHARACTER SET utf8 COLLATE utf8_general_ci;
+use `gulimall_sms`;
 CREATE DATABASE IF NOT EXISTS `gulimall_ums` CHARACTER SET utf8 COLLATE utf8_general_ci;
+use `gulimall_ums`;
 CREATE DATABASE IF NOT EXISTS `gulimall_wms` CHARACTER SET utf8 COLLATE utf8_general_ci;
+use `gulimall_wms`;
 CREATE DATABASE IF NOT EXISTS `sys_menus` CHARACTER SET utf8 COLLATE utf8_general_ci;
+use `sys_menus`;
 ```
 
 1.  gulimall_oms：[gulimall_oms.sql](assets\data\gulimall_oms.sql) 
