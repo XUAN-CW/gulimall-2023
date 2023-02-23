@@ -101,7 +101,7 @@ CREATE DATABASE IF NOT EXISTS `sys_menus` CHARACTER SET utf8 COLLATE utf8_genera
 
 ### [renren](https://gitee.com/renrenio) 数据库
 
-本项目管理后台基于人人开源，为了能够使用 [renren-fast.zip](assets\data\renren-fast.zip) 、 [renren-fast-vue.zip](assets\data\renren-fast-vue.zip) 、 [renren-generator.zip](assets\data\renren-generator.zip) 等项目，因此需要导入数据库：解压  [renren-fast.zip](assets\data\renren-fast.zip) ，解压目录下有 **db/mysql.sql** ，建表 `gulimall_admin` 并执行  **db/mysql.sql** 
+本项目管理后台基于人人开源，为了能够使用 [renren-fast.zip](assets\data\renren-fast.zip) 、 [renren-fast-vue.zip](assets\data\renren-fast-vue.zip) 、 [renren-generator.zip](assets\data\renren-generator.zip) 等项目，因此需要导入数据库：解压  [renren-fast.zip](assets\data\renren-fast.zip) ，解压目录下有 **db/mysql.sql** ，建库 `gulimall_admin` 并执行  **db/mysql.sql** 
 
 ```sql
 CREATE DATABASE IF NOT EXISTS `gulimall_admin` CHARACTER SET utf8 COLLATE utf8_general_ci;
