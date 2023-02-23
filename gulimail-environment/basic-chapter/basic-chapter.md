@@ -90,7 +90,6 @@ CREATE DATABASE IF NOT EXISTS `gulimall_pms` CHARACTER SET utf8 COLLATE utf8_gen
 CREATE DATABASE IF NOT EXISTS `gulimall_sms` CHARACTER SET utf8 COLLATE utf8_general_ci;
 CREATE DATABASE IF NOT EXISTS `gulimall_ums` CHARACTER SET utf8 COLLATE utf8_general_ci;
 CREATE DATABASE IF NOT EXISTS `gulimall_wms` CHARACTER SET utf8 COLLATE utf8_general_ci;
-CREATE DATABASE IF NOT EXISTS `sys_menus` CHARACTER SET utf8 COLLATE utf8_general_ci;
 ```
 
 1.  gulimall_oms：[gulimall_oms.sql](assets\data\gulimall_oms.sql) 
