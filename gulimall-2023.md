@@ -9,3 +9,9 @@ id: 1676718439521018100
 # 参考资料
 
 [gulimall-learning](https://github.com/NiceSeason/gulimall-learning.git) 项目
+
+
+
+# 链接
+
+http://192.168.56.10:8848/nacos
