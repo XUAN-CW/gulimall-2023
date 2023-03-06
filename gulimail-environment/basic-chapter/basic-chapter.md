@@ -159,7 +159,7 @@ docker run -d \
 
 ### 命名空间coupon
 
-参考 [Nacos_coupon.html](assets\data\Nacos_coupon.html) 创建命名空间 coupon，并参考 [Nacos_datasource.html](assets\references\Nacos_datasource.html)  [Nacos_mybatis.html](assets\references\Nacos_mybatis.html) 导入 [datasource.yml](assets\data\coupon\dev\datasource.yml)  [mybatis.yml](assets\data\coupon\dev\mybatis.yml) 
+参考 [Nacos_coupon.html](assets\data\Nacos_coupon.html) 创建命名空间 coupon 并导入  [coupon.zip](assets\data\coupon.zip) 
 
 ### 命名空间gateway
 
