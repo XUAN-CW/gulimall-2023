@@ -141,7 +141,7 @@ docker run -d \
   -p 8848:8848 \
   --name nacos \
   -e MODE=standalone \
-  nacos/nacos-server:1.1.3
+  nacos/nacos-server:1.4.1
 ```
 
 如果实在内存不够，那就使用下面这个：
@@ -154,7 +154,7 @@ docker run -d \
   -e MODE=standalone \
   -e JVM_XMS=256m \
   -e JVM_XMX=256m \
-  nacos/nacos-server:1.1.3
+  nacos/nacos-server:1.4.1
 ```
 
 ### 导入配置
